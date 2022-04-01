@@ -1,0 +1,32 @@
+//_vareliste.scss
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        &:nth-child(odd) { background-color: #eee;}
+        &:nth-child(1) { background-color: #7c147c; color: #fff; }
+
+        div {
+            box-sizing: border-box;
+            padding: .5rem;
+
+            &.vare {
+                flex-grow: 2;
+            }
+            &.mengde {
+               flex-grow: 1;
+               text-align: right;
+               font-size: .8rem;
+            }
+            &.heading {
+                font-weight: 600;
+            }
+        }
+    }
+}

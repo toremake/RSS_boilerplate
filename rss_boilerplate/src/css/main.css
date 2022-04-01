@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  margin: 2rem auto;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  max-width: 25rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+ul li:nth-child(odd) {
+  background-color: #eee;
+}
+ul li:nth-child(1) {
+  background-color: #7c147c;
+  color: #fff;
+}
+ul li div {
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+ul li div.vare {
+  flex-grow: 2;
+}
+ul li div.mengde {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 0.8rem;
+}
+ul li div.heading {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */

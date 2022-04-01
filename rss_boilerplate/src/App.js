@@ -1,4 +1,6 @@
-import './App.css';
+// src/App.js
+
+import './css/main.css';
 import {hentAlleVarer} from './sanity/service'
 import {useEffect, useState} from 'react'
 
@@ -17,23 +19,22 @@ function App() {
   console.log(handlelistevarer);
 
   return (
-    <>
+  <section>
     <h1>Handleliste</h1>
     <ul>
       <li>
         <div className="vare heading">Vare</div>
         <div className="mengde heading">Mengde</div>
       </li>
-      <li>
-        <div className="vare">Melk</div>
-        <div className="mengde">3 Liter</div>
-      </li>
-      <li>
-        <div className="vare">Egg</div>
-        <div className="mengde">12stk</div>
-      </li>
+      {handlelistevarer.map((vare) => (
+        <li>
+          <div className="vare">{vare.varenavn}</div>
+          <div className="mengde">{vare.mengde}</div>
+          </li>
+        )
+      )}
     </ul>
-    </>
+    </section>
   );
 }
 
